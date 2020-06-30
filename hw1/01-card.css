@@ -2,8 +2,51 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   color: #555;
+  margin: 8px;
 }
 
 a {
   color: rgb(0, 96, 96);
+}
+* {
+  box-sizing: border-box;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column{
+  border: 2px solid red;
+  border-radius: 0.25rem;
+  float: left;
+  width: 25%;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+}
+@media (min-width: 1024px) {
+  .column {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .column {
+    width: 30%;
+  }
+}
+
+@media (min-width: 414px) {
+  .column {
+    width: 30%;
+  }
+}
+
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
 }

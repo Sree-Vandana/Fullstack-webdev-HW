@@ -12,4 +12,26 @@
   text-align: center;
 }
 
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 100px);
+}
+
+.item1{
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.item3{
+  grid-area: 2 / 3 / 4 / 6;
+}
+.item4{
+  grid-area: 3 / 1 / 5 / 3;
+}
+.item9{
+  grid-area: 5 / 1 / 5 / 5; 
+}
+
+/*done*/
 /* Add your code here */

@@ -12,6 +12,19 @@
   background-color: purple;
   color: white;
   text-align: center;
+
 }
 
-/* Add your code here */
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  flex-direction: column-reverse;
+  flex-flow: column-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.item1{
+  order:10;
+}
+/*done*/

@@ -12,3 +12,45 @@
   background-color: coral;
   background-color: green; 
 */
+
+.container{
+  display: grid;
+  height: 300px;
+}
+
+.col-2{
+  background-color: navy;
+  border: solid 1px white;
+  padding: 20px;
+}
+
+.col-3{
+  background-color: purple;
+  border: solid 1px white;
+  padding: 20px;
+}
+
+.col-6{
+  background-color: #c7239e;
+  border: solid 1px white;
+  padding: 20px;
+}
+
+.col-4{
+  background-color: teal;
+  border: solid 1px white;
+  padding: 20px;
+}
+
+.col-8{
+  background-color: rgb(216, 21, 86);
+  border: solid 1px white;
+  padding: 20px;
+}
+
+
+.col-12{
+  background-color: green;
+  border: solid 1px white;
+  padding: 20px;
+}

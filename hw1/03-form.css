@@ -2,6 +2,8 @@ body {
   background-color: rgb(0, 78, 78);
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #ccc;
+  content: ;
+  padding: 10px 10px 10px 10px;
 }
 
 /* Colors used include:
@@ -9,8 +11,11 @@ body {
     - #006060;
     - #008080;
 */
+
+
 h2{
   color: #006060;
+  margin-top: 1px ;
 }
 .span{
   color: #006060;
@@ -19,26 +24,41 @@ label{
  color: black; 
 }
 
-
-
 input[type=text]{
   width: 100%;
   padding: 6px 10px;
   margin: 8px 0px;
-  display: inline-block;
   border: 1px solid gray;
   border-radius: 2px;
   box-sizing: border-box;
   
 }
+/* Show red borders when filled, but invalid 
+input:not(:placeholder-shown) {
+  border-color: hsl(0, 76%, 50%);;
+}*/
+
+
+/* Show green borders when valid */
+/* input:invalid {
+  border-color: hsl(120, 76%, 50%);
+} */
+
+/* input[type=text]:focus{
+  border: 1px solid red;
+} */
 
 input[type=email]{
   width: 100%;
   padding: 6px 10px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid gray;
   border-radius: 2px;
+  box-sizing: border-box;
+}
+.textarea{
+  border-radius: 4px;
+  width:100%;
   box-sizing: border-box;
 }
 
@@ -52,52 +72,74 @@ input[type=submit] {
   cursor: pointer;
 }
 
+
 input[type=submit]:hover {
   background-color: #58cbd3;
   color: black;
 }
 
-.formdiv{
-  align-items: center;
-  padding: 2% 35%;
-  width:80%;
+
+.container {
+  background-color:white;
+  width: 300px;
+  height: 500px;
+  border: 20px;
+  border-radius: 4px;
+  padding: 30px;
+  margin: 5px auto 5px auto;
+ 
 }
 
-@media (min-width: 768px){
-form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  align-items: center;
-  width:30%
-  
-}
-}
-
-@media (min-width: 414px) {
-  form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
+@media (max-width: 360px) {
+  .container {
+    background-color:white;
+    width: 250px;
+    height: 500px;
+    border: 20px;
+    border-radius: 4px;
     padding: 20px;
-    align-items: center;
-    width:30%
-    
-    
+    margin: 5px auto 5px auto;
+   
+  }
+}
+@media (min-width: 361px) and (max-width: 600px) {
+  .container {
+    background-color:white;
+    width: 280px;
+    height: 500px;
+    border: 20px;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 5px auto 5px auto;
+   
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    background-color:white;
+    width: 300px;
+    height: 500px;
+    border: 20px;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 5px auto 5px auto;
+   
   }
 }
 
-.h2{
-  text-align: center;
-}
-.textarea{
-  border-radius: 4px;
-  width:100%;
+@media (min-width: 1025px) {
+  .container {
+    background-color:white;
+    width: 350px;
+    height: 500px;
+    border: 20px;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 5px auto 5px auto;
+   
+  }
 }
 
-.flex-container{
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: center;
-
-}
+/* input:required {
+  border: 1px dashed red;
+} */

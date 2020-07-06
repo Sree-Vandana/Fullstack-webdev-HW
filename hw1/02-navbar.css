@@ -12,9 +12,13 @@ ul {
 }
 
 /* Change the link color on hover */
-li a:hover {
+li a:hover, a:focus {
   color: #008080;
   text-decoration: underline;
+}
+
+li a:active {
+  color: blue;
 }
 
 li{
@@ -22,27 +26,7 @@ li{
   padding: 20px;
 }
 
-li a{
+a {
   text-decoration: none;
 }
 
-@media (min-width: 1024px) {
-  .ul {
-    width: 30%;
-  }
-  
-}
-
-@media (min-width: 768px) {
-  .ul {
-    width: 30%;
-  }
-  
-}
-
-@media (min-width: 414px) {
-  .ul {
-    width: 30%;
-  }
-  
-}

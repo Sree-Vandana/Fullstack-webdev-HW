@@ -34,13 +34,10 @@ input[type=text]{
   
 }
 
-#name:invalid{
-  border: 1px solid red;
+input:invalid:focus{
+  outline: 1.5px auto red;
 }
 
-#email:invalid{
-  border: 1px solid red;
-}
 
 input[type=email]{
   width: 100%;

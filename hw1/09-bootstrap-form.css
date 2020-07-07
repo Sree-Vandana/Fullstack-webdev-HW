@@ -29,7 +29,7 @@ body{
 
 input:invalid:focus{
   outline: 2px auto red;
-  box-shadow: red;
+  
 }
  
 @media (max-width:500px) {

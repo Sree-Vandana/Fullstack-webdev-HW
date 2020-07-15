@@ -13,9 +13,34 @@
     <title>JavaScript Form Exercise</title>
   </head>
   <body class="bg-dark">
-    <form class="bg-light border rounded w-50 mx-auto mt-5 p-3">
-      <h2 class="mt-2 mb-4">Contact Form</h2>
+    <div class="container">    
+    <form action="" onsubmit="return displayOnConsole()" class="bg-light border rounded w-50 mx-auto mt-5 p-3">
+     <!-- <h2 class="mt-2 mb-4">Contact Form</h2> -->
+    
+      <h4 style="text-align: center;">CONTACT FORM</h4>
+
+      <div class="form-group">
+        <label for="name" >Name *</label></br>
+        <input type="text" class="form-control" id="name" placeholder="Full Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" class="form-control" id="email" placeholder="name@pdx.edu" required />
+        </div>
+      <div class="form-group">
+        <label for="Submityourmessage">Submit your message</label>
+        <textarea class="form-control" id="Submityourmessage" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="checkbox"  id="newsletter" name="newsletter" value="newsletter" checked>
+        <label for="newsletter">Sign up for newsletter</label><br>
+      </div>
+      <div class = "btn-toolbar" id="buttons">
+        <button id="submit" class=" btn btn-primary mb-2" type="submit" >Submit</button>
+        <button id="reset" class=" btn btn-secondary mb-2" type="reset" >Reset</button>
+      </div>      
     </form>
+    </div>
     <script src="03-form.js"></script>
   </body>
 </html>

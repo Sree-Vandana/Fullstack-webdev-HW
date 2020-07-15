@@ -1,1 +1,17 @@
 /* Add your styles here  */
+#buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#submit{
+  width: 45%;
+  margin-right: 5px;
+}
+
+#reset{
+  width: 45%;
+  margin-left: 5px;
+}

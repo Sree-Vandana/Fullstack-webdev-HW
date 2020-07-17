@@ -34,9 +34,9 @@ xhr.responseType = 'json';
 xhr.send();
 xhr.onload = () => {
 if (xhr.status === 200) {
-console.log(xhr.response);
+//console.log(xhr.response);
 //countryInfo = xhr.response;
-console.log(xhr.response.length);
+//console.log(xhr.response.length);
 for(let i=0; i<xhr.response.length; i++){
       countryInfo += `<b><li value="${xhr.response[i].name}">${xhr.response[i].name} - ${numberWithCommas(xhr.response[i].population)}</li></b>`
     }

@@ -1,18 +1,19 @@
 {
   "name": "hw3",
   "version": "1.0.0",
-  "description": "web-dev homework",
+  "description": "webdev homework",
   "main": "01-form.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "form",
-    "submission"
+    "submit"
   ],
   "author": "sree vandana",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-session": "^1.17.1"
   }
 }

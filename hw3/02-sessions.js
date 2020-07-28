@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.set({ 'Content-Type': 'text/plain' });
   req.session.example = [];
   req.session.example.push(decodeURIComponent(req.url));
-  res.send(`Currently on route: ${decodeURIComponent(req.url)}\nWelcometo http://locahost:5000/`);
+  res.send(`Currently on route: ${decodeURIComponent(req.url)}\n\nWelcometo http://locahost:5000/`);
 });
 
 app.get('/:parameter', function(req, res) {
@@ -30,7 +30,7 @@ app.get('/:parameter', function(req, res) {
       console.log("1st--> ",urls);
       console.log("2nd--> ", decodeURIComponent(req.url));
       req.session.example.push(decodeURIComponent(req.url));
-      res.send(`Currently on route: ${decodeURIComponent(req.url)}\nPreviously visited:\n  ${urls.join('\n  ')}`);
+      res.send(`Currently on route: ${decodeURIComponent(req.url)}\n\nPreviously visited:\n  ${urls.join('\n  ')}`);
 });
 
 

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "my-cart-5abd0": {
+      "hosting": {
+        "MyStore": [
+          "my-cart-5abd0"
+        ]
+      }
+    }
+  }
+}
